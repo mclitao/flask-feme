@@ -97,7 +97,7 @@ class ListService(Resource):
 
         # MD服务检查'
         mdout=exec_cli(PS_EF_MD)
-        print('---'*50)
+        print('---'*30)
         print(mdout)
         try:
             if int(mdout) > 1:
