@@ -23,6 +23,7 @@ MD_jar_path=config.get('SHELLCLI','MD_jar_path')
 ME_jar_path=config.get('SHELLCLI','ME_jar_path')
 
 
+
 PS_EF_MD='ps -ef |grep \'java -cp\' |grep ' + MD_Name + '|wc -l'
 PS_EF_ME='ps -ef |grep \'java -cp\' |grep '+ ME_Name + ' |wc -l'
 
