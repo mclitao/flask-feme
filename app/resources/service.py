@@ -73,10 +73,11 @@ def exec_cli(_cmd):
         print(_cmd)
         val = os.popen(_cmd)
         out = val.read()
+        print(out)
     except:
         out = 'Error'
         print('exec shell stript Error!!')
-
+  
     return out
     
 # 处理掉特殊字符
@@ -96,7 +97,7 @@ class ListService(Resource):
 
         # MD服务检查'
         mdout=exec_cli(PS_EF_MD)
-        print('---*50')
+        print('---'*50)
         print(mdout)
         try:
             if int(mdout) > 1:
