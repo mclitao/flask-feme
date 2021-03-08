@@ -9,7 +9,7 @@ import subprocess
 # 读取配置文件site.ini，用来配置进程名，程序包版本名
 import configparser
 config = configparser.ConfigParser()
-filename=config.read('./app/resources/site.ini',encoding='utf-8')
+filename=config.read('/app/app/resources/site.ini',encoding='utf-8')
 print(filename)
 
 secs=config.sections()
